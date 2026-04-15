@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<style>
+
+
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: #f0ebe3;
+  color: #2c1a0e;
+}
+
+nav {
+  background: #3b1f0f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #c9a96e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #3b1f0f;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+nav ul li a {
+  color: #e8ddd4;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+}
+
+nav ul li a:hover { color: #c9a96e; }
+
+.bienvenue {
+  margin: 24px 40px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  height: 420px;
+  background: linear-gradient(rgba(30,10,0,0.55), rgba(30,10,0,0.55)),
+    url(images/café\ acceuil.jpg) center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.bienvenue h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  line-height: 1.2;
+}
+
+.bienvenue p {
+  font-size: 15px;
+  font-weight: 300;
+  max-width: 420px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+  color: #e8ddd4;
+}
+
+.bouton {
+  background: transparent;
+  border: 1.5px solid #c9a96e;
+  color: #c9a96e;
+  padding: 11px 30px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  transition: all 0.25s;
+}
+
+.bouton:hover {
+  background: #c9a96e;
+  color: #3b1f0f;
+}
+
+section { padding: 60px 40px; }
+
+.titre {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--texte);
+}
+
+.grille {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.apropos{
+  background: #faf7f2;
+  border: 1px solid #d9cfc4;
+  border-radius: 10px;
+  padding: 28px 24px;
+  min-height: 160px;
+}
+
+.apropos h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  color: #faf7f2;
+  margin-bottom: 12px;
+}
+
+.apropos p {
+  font-size: 13.5px;
+  color: var(--texte-clair);
+  line-height: 1.7;
+}
+.galerie-grille {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.galerie {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  height: 220px;
+  cursor: pointer;
+}
+
+.galerie img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.galerie:hover img { 
+  cursor: pointer;
+  transform: scale(1.06); 
+}
+
+.description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 50px 16px 16px;
+  background: linear-gradient(transparent, rgba(20,8,0,0.75));
+  color: white;
+}
+
+.description h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.description p {
+  font-size: 12px;
+  color: #d9cfc4;
+  font-weight: 300;
+}
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+ <body>
+ <!-- navigation -->
+    <nav>
+        <div class="logo-circle">logo</div>
+
+        <ul>
+            <li><a href="#">Acceuil</a></li>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Galérie</a></li>
+            <li><a href="#">Newsletter</a></li>
+        </ul>
+    </nav>
+    <!-- bienvenue -->
+    <div class="bienvenue">
+        <a href="./cafe-de-rome-dakar (1).jpg"></a>
+        <h1>Bienvenue au Café Délice</h1>
+        <p>Un espace chaleureux où saveurs, détente et convivialité se rencontrent chaque jour.</p>
+        <button class="bouton">Decouvrir</button>
+    </div>
+    <!-- apropos -->
+<section>
+        <h2 class="titre">A Propos</h2>
+        <div class="grille">
+            <div class="apropos">
+                <h3>Notre histoire</h3>
+                <p>Café Délice est né d'une passion pour le café artisanal, la pâtisserie maison et les moments partagés
+                    entre amis ou en famille.</p>
+            </div>
+            <div class="apropos">
+                <h3>Nos produits</h3>
+                <p>Nous sélectionnons des ingrédients frais et locaux pour vous offrir des boissons gourmandes, des
+                    brunchs savoureux et des desserts raffinés.</p>
+            </div>
+            <div class="apropos">
+                <h3>Notre ambiance</h3>
+                <p>Un décor moderne, doux et accueillant pour travailler, discuter ou tout simplement profiter d'un
+                    instant de calme autour d'un bon café.</p>
+            </div>
+            <div class="apropos">
+                <h3>Notre promesse</h3>
+                <p>Offrir à chaque visite une expérience unique, avec un service attentionné et des saveurs qui donnent
+                    envie de revenir.</p>
+            </div>
+        </div>
+    </section>
+ <section>
+        <h2 class="titre">Galérie</h2>
+        <div class="galerie-grille">
+            <div class="galerie">
+                <div class="description">
+                    <img src="./plat.jpg" alt="café">
+                    <h4>Café Signature</h4>
+                    <p>Un mélange intense et parfumé.</p>
+                </div>
+            </div>
+            <div class="galerie">
+                <div class="description">
+                    <img src="./plat2.jpg" alt="brunch du matin">
+
+                    <h4>Brunch du matin</h4>
+                    <P>Fraîcheur et gourmandise à partager.</P>
+                </div>
+            </div>
+
+            <div class="galerie">
+                <div class="description">
+                    <img src="./plat3.jpg" alt="dessert">
+                    <h4>Desserts du maison</h4>
+                    <P>Des douceurs préparées chaque jour.</P>
+                </div>
+            </div>
+            <div class="galerie">
+                <div class="description">
+                    <img src="./plat4.jpg" alt="coin">
+                    <h4>Coin Détente</h4>
+                    <P>Un espace confortable et apaisant.</P>
+                </div>
+            </div>
+            <div class="galerie">
+                <div class="description">
+                    <img src="./cafe-de-rome-dakar (1).jpg" alt="Saveurs Locales">
+                    <h4>Saveurs Locales</h4>
+                    <P>Des produits choisis avec soin.</P>
+                </div>
+            </div>
+            <div class="galerie">
+                <div class="description">
+                    <img src="./plat2.jpg" alt="Moments précieux">
+                    <h4>Moments précieux</h4>
+                    <P>Des instants simples autour d'un café.</P>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+
+
+
+    
+</body>
+</html>

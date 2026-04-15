@@ -1,0 +1,47 @@
+.body {
+    background-color: brown;
+}
+
+.entete {
+
+    border-radius: 2px solid rgb(211, 206, 206);
+    display: flex;
+    justify-content: space-around;
+}
+
+.rectangle {
+    width: 45%;
+    height: 300px;
+    border: 2px solid white;
+
+}
+ .granderectangle {
+
+width: 95%;
+height: 400px;
+border: 2px solid white;
+margin:40px auto;
+
+ }
+ .contenant6{
+ display: flex;
+ justify-content: space-around;
+
+
+ }
+.rect3{
+
+width: 30%;
+height: 250px ;
+border: 2px solid white;
+border-radius: 12px;
+margin-top: 20px;
+}
+.contenantcercle{
+margin-top: 20px;
+
+}
+
+
+
+
